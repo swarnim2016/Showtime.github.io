@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %}register{% endblock title %}
+{% block body %}
+<style>
+   .form-label{
+       color:white;
+    }
+    body{
+        background-color: black;
+    }
+    .text-center{
+        color:white;
+    }
+   img{
+    width: 100%;
+   }
+    
+    
+    </style>
+
+<div class="ss">
+  <img src="https://www.verifi.com/wp-content/uploads/2020/04/Banner_Updated_Policy_1200x400-1.png">
+</div>
+<div class="container mb-3 py 4">
+  <h1 class="text-center">Register</h1>
+  <form class= "row g-3" method="post" action="/register">
+    {% csrf_token %}
+      
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="enter your name">
+      </div>
+      <div class="container-fluid">
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="abcd@gmail.com">
+        </div>
+        <div class="col-md-6">
+          <label for="password" class="form-label">password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="number" class="form-control" id="phone" name="phone" placeholder="phone number">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" name="city">
+      </div>
+      <div class="col-md-4">
+        <label for="state" class="form-label">State</label>
+        <select id="state" name="state" class="form-select">
+          <option selected>Choose...</option>
+          <option>Delhi</option>
+          <option>Bihar</option>
+          <option>Maharashtra</option>
+          <option>West Bengal</option>
+          <option>Gujrat</option>
+          <option>Karnatka</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+    
+
+
+
+
+{% endblock body %}

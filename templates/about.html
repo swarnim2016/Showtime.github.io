@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "open sans", sans-serif;
+        background: black;
+        background-size: cover;
+        height: 100%;
+
+    }
+ 
+  a{
+    color: rgb(244, 239, 239);
+  }
+
+    
+
+    .about-section {
+        width: 100%;
+        background: black;
+        padding: 40px 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+
+
+    }
+
+    .inner-width {
+        max-width: 1200px;
+        overflow: hidden;
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    .about-section h1 {
+        text-align: center;
+        color: white;
+    }
+
+    .border {
+        width: 100px;
+        height: 3px;
+        background: black;
+        margin: 40px auto;
+    }
+
+    .about-section-row {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1000px;
+
+    }
+
+    .about-section-col {
+        flex: 40%;
+        padding: 10px;
+        color: white;
+    }
+
+    .about {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .about p {
+        text-align: justify;
+        margin-bottom: 20px;
+        color: rgb(255, 191, 0);
+        font-size: 17px;
+    }
+
+    .about a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #3CEDA7;
+        border-radius: 24px;
+        padding: 8px 40px;
+        transition: 0.4s linear;
+    }
+
+    .about a:hover {
+        color: #fff;
+        background: #3CEDA7;
+    }
+
+    .skills {
+        padding-left: 30px;
+    }
+
+    .skill {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        color: white
+    }
+
+    .progress {
+        width: 100%;
+        height: 12px;
+        background: #ddd;
+        border-radius: 12px;
+    }
+
+    .progress-bar {
+        height: 12px;
+        background: #3CEDA7;
+        border-radius: 12px;
+    }
+
+    .p1 {
+        width: 90%;
+    }
+
+    .p2 {
+        width: 70%;
+    }
+
+    .p3 {
+        width: 50%;
+    }
+
+    .progress-bar span {
+        float: right;
+        margin-right: 6px;
+        line-height: 13px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width:700px) {
+        .about-section-col {
+            flex: 100%;
+            margin: 10px 0;
+        }
+
+        .about,
+        .skills {
+            padding: 0;
+        }
+
+        .about {
+            text-align: center;
+        }
+    }
+
+    .container {
+        padding: 2px;
+        /* height: 50px;
+        width: 50px; */
+    }
+
+    .h1 {
+        color: white;
+    }
+
+    .contact {
+        height: 20%;
+        align-items: center;
+    }
+</style>
+<div class="about-section px -5 my-0">
+    <h1>About Us</h1>
+    <div class="border"></div>
+    <div class="about-section-row">
+
+        <div class="about-section-col">
+            <div class="about">
+                <p>
+                    With the establishment of the country's first multiplex cinema in 1997, ShowTime's well distributed
+                    footprints spread across all significant points on the cinema circuit in India and as of now,
+                    consists of 845 screens, across 176 cinemas located across 71 cities. PVR entertains over 100
+                    million + viewers annually.
+                    <br>
+
+                    Our philosophy in ShowTime has always been to push the envelope and come up with unique cinematic
+                    experiences for our audiences. To give our patrons a truly plush experience the choicest materials
+                    are deployed in construction, fittings and styling.
+                    <br>
+                    PVR is the largest and the most premium film and retail entertainment company in India. Since its
+                    inception in 1997, the brand has redefined the way entertainment is consumed in India. PVR currently
+                    operates a cinema circuit comprising of 468 screens in 105 properties in 43 cities pan India. The
+                    subsidiaries of PVR Ltd ranges from the largest bowling chain in India ‘ShowTime bluO’ to the two
+                    casual
+                    dining restaurants Mistral and Mr Hong under ShowTime Leisure. The group under the arm of ShowTime
+                    Pictures is
+                    into film distribution of non-studio / independent international films in India. ShowTime is also
+                    known
+                    for cultivating and spreading international movie culture countrywide and supports independent
+                    filmmakers under the banner of ‘Directors Rare’.
+
+                    The company acquired the Cinemax properties in 2012 and currently serves 60 million patrons at PAN
+                    India level. From ShowTime’s Gold Class and Mainstream Cinemas to Director’s Cut, ShowTime has made
+                    exceptional technology like the IMAX® and the ECX (Enhanced Cinema Experience) accessible to its
+                    audience. Currently amongst the top 10 cinema companies in the world with respect to admissions per
+                    screen, ShowTime has entered the World Economic Forum’s List of Fastest-Growing ‘Global Growth
+                    Companies’.
+
+                    Our Vision
+                    ShowTime Cinemas, the largest cinema exhibition company in the country presently stands at a count
+                    of 471
+                    screens in 106 properties in 44 cities. Our ability to reinvent, to innovate and to challenge
+                    ourselves is a testimony to the exponential expansion across India. The company’s long term vision
+                    is to excel in its domain by providing movie connoisseurs a premier experience by redefining cinema
+                    viewing.
+
+                    As we aspire to continue being an admirable company and strive to excel in the minds of our patrons,
+                    we believe that the size and reach of the theatre circuit along with quality, provides for a world
+                    class cinematic experience. Our focus is to innovate for audiences, an impeccable space, product and
+                    service. ShowTime Cinemas aims to immerse you in the movies.
+
+
+                </p>
+                <br>
+
+            </div>
+        </div>
+        <div class="about-section-col">
+
+            <div class="skills">
+                <h3>Our performance</h3>
+                <div class="skill">
+                    <div class="title">Outstanding</div>
+                    <div class="progress">
+                        <div class="progress-bar p1"><span>90%</span></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+
+                    <div class="title">Excellent</div>
+                    <div class="progress">
+                        <div class="progress-bar p2"><span>70%</span></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="title">Satisfactory</div>
+                    <div class="progress">
+                        <div class="progress-bar p3"><span>50%</span></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://i.pinimg.com/736x/09/44/4d/09444db3be194a3773c40daf4d692227--entrance-hall-movie-theater.jpg"
+                        class="center"><img>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="bd-footer py-0 py-md-5 bg-dark">
+    <div class="container py-4 py-md-5 px-4 px-md-3">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+            <img src="https://yt3.ggpht.com/-Z1DlqrIAI40/AAAAAAAAAAI/AAAAAAAAAAA/mLE6bFQF1_Q/s900-c-k-no/photo.jpg" height="60px" width="100px">
+
+          </a>
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.2/about/team/">ShowTime team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+            <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+            <li class="mb-2">Currently v5.2.2.</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/">Home</a></li>
+            <li class="mb-2"><a href="about">About</a></li>
+            <li class="mb-2"><a href="/movies">Movies</a></li>
+            <li class="mb-2"><a href="/register">Register</a></li>
+            <li class="mb-2"><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Guides</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/docs/5.2/getting-started/">Getting started</a></li>
+            <li class="mb-2"><a href="/docs/5.2/examples/starter-template/">Starter template</a></li>
+            <li class="mb-2"><a href="/docs/5.2/getting-started/webpack/">Webpack</a></li>
+            <li class="mb-2"><a href="/docs/5.2/getting-started/parcel/">Parcel</a></li>
+            <li class="mb-2"><a href="/docs/5.2/getting-started/vite/">Vite</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Projects</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Community</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+            <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+            <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+            <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+{% endblock body %}
